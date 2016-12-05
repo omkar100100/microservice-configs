@@ -10,8 +10,11 @@ eureka:
 
 ---
 spring:
-  profiles: cloud
+  profiles: docker
 eureka:
-  instance:
-    hostname: ${APPLICATION_DOMAIN}
-    nonSecurePort: 80
+  client:
+    serviceUrl:
+      defaultZone: ${vcap.services.eureka-service.credentials.uri:http://172.168.0.2:8761}/eureka/
+       
+server:
+  port: ${PORT:9023}
