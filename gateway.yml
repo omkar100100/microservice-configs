@@ -11,10 +11,13 @@ eureka:
 ---
 spring:
   profiles: docker
+  cloud:
+    config:
+      uri: http://localhost:8888  
 eureka:
   client:
     serviceUrl:
       defaultZone: ${vcap.services.eureka-service.credentials.uri:http://172.18.0.2:8761}/eureka/
-       
+          
 server:
   port: ${PORT:9023}
