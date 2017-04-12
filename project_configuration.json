@@ -1,1 +1,8 @@
 
+[
+{
+"gitProjectName": "edmp-config-server",
+"gitRepositoryUrl": "https://github.com/codecentric/edmp-config-server",
+"dockerPort": "18888:8888"
+}
+]
