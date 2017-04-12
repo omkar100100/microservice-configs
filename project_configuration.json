@@ -1,8 +1,7 @@
-[
+
  {
     gitProjectName: "config-server",
     gitRepositoryUrl: "https://cavula@bitbucket.org/nviso_insights_custom/insights_custom_ea_api_backend.git",
     dockerPort: "18888:8888"
   }
 
-]
